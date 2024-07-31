@@ -15,6 +15,10 @@ function App() {
         <Route path="/" element={
           <div>
             <h1>Main App</h1>
+            <div>
+              <a href='/embed-calendar'><button>Calendar</button></a>
+              <a href='/embed-picker'><button>Picker</button></a>
+            </div>
           </div>
         } />
       </Routes>
