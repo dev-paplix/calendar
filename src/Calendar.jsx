@@ -1,6 +1,7 @@
-import FullCalendar from '@fullcalendar/react'
-import dayGridPlugin from '@fullcalendar/daygrid' // a plugin!
-import interactionPlugin from "@fullcalendar/interaction" // needed for dayClick
+import FullCalendar from '@fullcalendar/react';
+import dayGridPlugin from '@fullcalendar/daygrid';
+import interactionPlugin from "@fullcalendar/interaction" ;
+import { LocalizationProvider } from '@mui/x-date-pickers/LocalizationProvider';
 
 export default function Calendar() {
   const handleDateClick = (arg) => {
@@ -8,6 +9,7 @@ export default function Calendar() {
   }
 
   return (
+    
     <FullCalendar
       plugins={[ dayGridPlugin, interactionPlugin ]}
       dateClick={handleDateClick}
